@@ -1,27 +1,9 @@
-let day = 2;
+let num1 = 32;
+let num2 = 47852;
 
-switch (day) { 
-  case 1:
-    console.log("The day is Monday.");
-    break;
-  case 2:
-    console.log("The day is Tuesday.");
-    break;
-  case 3:
-    console.log("The day is Wednesday.");
-    break;
-  case 4:
-    console.log("The day is Thursday.");
-    break;
-  case 5:
-    console.log("The day is Friday.");
-    break;
-  case 6:
-    console.log("The day is Saturday.");
-    break;
-  case 7:
-    console.log("The day is Sunday.");
-    break;
-  default:
-    console.log("Invalid day.");
+if( (num1%10) == (num2%10) ) {
+    console.log("The number ends with 2");
+}
+else {
+    console.log("The number does not end with 2");
 }
