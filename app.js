@@ -1,9 +1,10 @@
-let str = prompt("Enter yout string: ");
+let name = "BiSMA";
+let index= 1;
 
-if(str.length == 0)
+if(name[1] == name[1].toLowerCase())
 {
-    console.log(" String is empty")
+    console.log(" Lower ");
 }
 else{
-    console.log("not empty");
+    console.log("Now lower");
 }
