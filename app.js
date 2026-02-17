@@ -1,60 +1,31 @@
+let todo = [];
+let req = prompt(" Please Enter Request");
 
-// // Check the element is Lower case 
-// let name = "BiSMA";
-// let index= 1;
+while (true) {
+    if (req == "quit") {
+        console.log(" Quitting App");
+        break;
+    }
 
-// if(name[1] == name[1].toLowerCase())
-// {
-//     console.log(" Lower ");
-// }
-// else{
-//     console.log("Now lower");
-// }
+    else if (req == "list") {
+        console.log("------------");
+        for (let i= 0; i<todo.length; i++) {
+            console.log(i, todo[i]);
+        }
+        console.log("------------");
+    }
 
-// // Iten exists in array
-// let arr =[ "BISMA", "R", 34,56,23,"RAZA"];
-// let check = "R";
+    else if (req == "add") {
+        let task = prompt(" Please Enter the task:");
+        todo.push(task);
+        console.log("Task Added");
+    }
 
-// if (arr.indexOf(check) != -1)
-// {
-//     console.log("Yes");
-// }
-// else {
-//     console.log("No");
-// }
+    else if( req == "delete"){
+        let idx = Number(prompt("Enter the task index you want to delete:"));
+        todo.splice(idx, 1);
+        console.log("Task Deleted");
+    }
+    req = prompt(" Please Enter Request");
 
-// // Trim Function
-
-// let str = "        BISMA       ";
-// console.log(str);
-// console.log(str.trim());
-
-
-// // Loops
-
-// for (let i = 3; i<=30; i+=3)
-//     console.log(i)
-
-// for (let i= 1; i<= 3; i++)
-// {
-//     for(let i = 1; i<= 3; i++)
-//     {
-//         console.log(i)
-//     }
-// }
-
-// Guess
-
-// const favMovie = "avatar";
-
-// let guess = prompt("Guess My Fav Moview");
-
-// while ((guess != favMovie) && (guess != "quit")) {
-//     guess = prompt("Wrong Guess, Try AGain");
-// }
-// if (guess == favMovie)
-//     console.log("yes true");
-// else {
-//     console.log(" You quit")
-// }
-
+}
