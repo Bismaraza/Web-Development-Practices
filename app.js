@@ -45,15 +45,16 @@
 
 // Guess
 
-const favMovie = "avatar";
+// const favMovie = "avatar";
 
-let guess = prompt("Guess My Fav Moview");
+// let guess = prompt("Guess My Fav Moview");
 
-while ((guess != favMovie) && (guess != "quit")) {
-    guess = prompt("Wrong Guess, Try AGain");
-}
-if (guess == favMovie)
-    console.log("yes true");
-else{
-    console.log(" You quit")
-}
+// while ((guess != favMovie) && (guess != "quit")) {
+//     guess = prompt("Wrong Guess, Try AGain");
+// }
+// if (guess == favMovie)
+//     console.log("yes true");
+// else {
+//     console.log(" You quit")
+// }
+
