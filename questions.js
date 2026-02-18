@@ -30,7 +30,7 @@ const student = { // address not changes, values can be changed
 
 const classInfo = {
     Bisma: {
-        grade: "A+",
+        grade: "A",
         city: 'Dehli'
     },
      Raza: {
@@ -42,4 +42,19 @@ const classInfo = {
         city: 'Lahore'
     }
 }
+
+const classInf = [
+     {
+        grade: "A",
+        city: 'Dehli'
+    },
+     {
+        grade: "A+",
+        city: 'Mianwali'
+    },
+      {
+        grade: "B",
+        city: 'Lahore'
+    }
+]
 
