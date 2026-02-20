@@ -1,18 +1,13 @@
-function dice(){
-    const random = Math.floor (Math.random() * 6 ) + 1 ;
-    console.log(random);
-}
 
-// dice();
+let arr = ["Bisma","raza","Apna College"];
+ 
+function array(arr){
+    let text = "";
 
-function table(n){
-    for(let i = 1; i<=10; i++){
-    let mul = n*i;
-    console.log(mul);
+    for(let i = 0; i<arr.length; i++){
+        text= text+ arr[i];
     }
-}
-// table(73);
 
-let arr = [ 1,2,3,4];
-let part = arr.slice(2,4);
-console.log(part);
+    return text;
+}
+
