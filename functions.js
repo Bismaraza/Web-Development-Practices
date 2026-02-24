@@ -114,3 +114,5 @@ function long(country) {
 return country[ansindex];
 }
 console.log(long(country));
+
+

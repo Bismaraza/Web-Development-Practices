@@ -49,12 +49,46 @@
 //     },
 // };
 
-const square = (n) => (n * n);
+// const square = (n) => (n * n);
 
-let id = setInterval(() =>{
-    console.log("Hello World")
-}, 2000);
+// let id = setInterval(() =>{
+//     console.log("Hello World")
+// }, 2000);
 
-setTimeout(() => {
-    clearInterval(id);
-}, 10000);
+// setTimeout(() => {
+//     clearInterval(id);
+// }, 10000);
+
+
+// JS PArt 7 Question no 1;
+const arrayAverage = (arr) => {
+    let total = 0;
+    for (let number of arr) {
+        total = total + number;
+    }
+    return total / arr.length;
+};
+
+let arr = [1, 2, 3, 4, 5, 6];
+console.log(arrayAverage(arr));
+
+// Question 2
+
+const isEven = (n) => n % 2 == 0;
+
+let n = 20;
+console.log(isEven(n));
+
+// Question 3
+const object = {
+    message:"Hello world",
+    logMessage(){
+        console.log(this.message);
+    }
+};
+
+setTimeout(object.logMessage,1000);
+
+// Question 4
+
+
